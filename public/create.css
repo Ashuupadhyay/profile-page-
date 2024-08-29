@@ -1,0 +1,56 @@
+body{margin: 0;padding: 0;box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-image: url("https://media.istockphoto.com/id/843593806/photo/defocused-human-icons-on-black-background.webp?b=1&s=170667a&w=0&k=20&c=jC3xDEH1in0w4rz0XMFOnOPL66h3j8C5dduQWJnvuVs=");
+     background-repeat: no-repeat;
+     background-size: 100%;
+     overflow: hidden;
+
+        
+    }
+        .main{
+            position: relative;
+            margin-top: 120px;
+            height: 400px;
+            width: 550px;
+        
+            
+        }
+        .child1{
+            height: 100%;
+            width: 275px;
+            float: left;
+        }
+        .child2{
+            height: 100%;
+            width: 275px;
+    
+            float: right;
+            background: rgb(27, 100, 160);
+        
+        }
+        form{
+            position: relative;
+            margin-left: 50px;
+            top: 50px;
+        }
+        form input{
+              position: relative;
+              margin-top: 10px;
+              margin-bottom: 10px;
+            outline: none;
+            font-weight: bolder;
+            color: rgb(25, 136, 187)
+        }
+        label{
+            color: rgb(2, 35, 78);
+            font-weight: bolder;
+        }
+        #nextpage{
+            position: relative;
+            margin-top: 50px;
+            left: 10px;
+            font-weight:bolder;
+        }
+        

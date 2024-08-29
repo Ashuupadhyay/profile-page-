@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/832990d299.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/login.css">
+</head>
+<body>
+    <div class="main">
+
+        <div class="child1">
+            <img src="/f4eac431-afe3-4a75-bf7c-1a0853a76b5f.jpg" alt="" height="100%" width="100%" id="lg">
+        </div>
+        <div class="child2">
+            <i class="fa-solid fa-comment" style="font-size: 70px; color: rgb(2, 2, 44); display: flex; justify-content: center;"></i>
+        <form action="/home/createaccount/login" method="post" id="frm">
+            <label>ENTER EMAIL</label>
+            <input type="email" placeholder="enter email" name="email" id="inputemail">
+            <label> ENTER PASSWORD</label>
+            <input type="password" placeholder="create password" name="password" id="inputpass">
+            <br>
+            <input type="submit" value="LOGIN">
+        </form>
+        <p id="nextpage">FORGOT password <a href="/home/createaccount/login/forgetpassword" style="text-decoration: none; color: rgb(140, 112, 238);">click here</a></p>
+        </div>
+    </div>
+        <script>
+            let form=document.getElementById("frm");
+            form.addEventListener("submit",(e)=>{
+                let inemail=document.getElementById("inputemail");
+                let inputpass=document.getElementById("inputpass");
+      if(inemail.value=="" ||inputpass.value==""){
+                    alert("please fill require data in all fields")
+                    e.preventDefault();
+                }
+            })
+    
+        </script>
+        
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;padding: 0;box-sizing: border-box;
+    }
+    body{margin: 0;padding: 0;box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-image: url("https://media.istockphoto.com/id/843593806/photo/defocused-human-icons-on-black-background.webp?b=1&s=170667a&w=0&k=20&c=jC3xDEH1in0w4rz0XMFOnOPL66h3j8C5dduQWJnvuVs=");
+     background-repeat: no-repeat;
+     background-size: 100%;
+     overflow: hidden; }
+     .main{
+        display: block;
+         position: relative;
+        margin-top: 0px;
+        height: 500px;
+        width: 500px;
+    
+     }
+     .ffg{
+            position: relative;
+            margin-left: 160px;
+            top: 50px;
+        }
+        form input{
+              position: relative;
+              margin-top: 20px;
+              margin-bottom: 10px;
+            outline: none;
+            font-weight: bolder;
+            color: rgb(25, 136, 187)
+            
+            
+        }
+        label{
+            color: black;
+            font-weight: bolder;
+           
+        }
+        .bef{
+            display: none;
+        }
+        .aft{
+            display: block;
+            position: relative;
+            margin-left: 160px;
+            top: 50px;
+        }
+
+</style>
+<body>
+    <div class="main">
+<img src="/f4eac431-afe3-4a75-bf7c-1a0853a76b5f.jpg" alt=" " height="150px" width="200px" style="position: relative; margin-left: 140px;">
+<form action="#"  class="ffg">
+    <label>ENTER EMAIL</label><br>
+      <input type="email" placeholder="enter email" name="email" id="inputemail"><br>
+      <input type="button" value="ENTER" id="frm1">
+
+  </form>
+  <form action="/home/createaccount/login/forgetpassword" method="post"  id="frm2" class="bef" >
+    <label>user email</label><br>
+    <input type="email" id="aftemail" name="email"><br>
+    <label>enter new password</label><br>
+      <input type="password" placeholder="enter new password" id="npass"><br>
+      <label>conform new password</label><br>
+      <input type="password" placeholder="conform new password" id="conpss" name="password"><br>
+
+      <input type="submit" value="change password">
+
+  </form>
+
+    </div>
+    <script>
+     let f1=document.getElementById("frm1");
+     f1.addEventListener("click",()=>{
+        let emm=document.getElementById("inputemail");
+        if(emm.value==""){
+            alert("enter email");
+        }
+        else{
+            let f2=document.getElementById("frm2");
+           f2.classList.remove("bef");
+           f2.classList.add("aft");
+
+    const aftem=document.getElementById("aftemail")
+    aftem.value=emm.value;
+           
+    
+        }
+     });
+     
+    
+     
+     
+
+     let velf=document.getElementById("frm2");
+     velf.addEventListener("submit",(e)=>{
+        let ps=document.getElementById("npass");
+        let cp=document.getElementById("conpss");
+        if(ps.value==""||cp.value==""){
+            alert("please fill data in all exixts field");
+            e.preventDefault();
+        }
+        else{
+            if(ps.value!=cp.value){
+                alert("new password and conform password not matched")
+                e.preventDefault();
+            }
+            else{
+                alert("password changed successfully")
+
+            }
+        }
+     });
+     velf.addEventListener("on")
+    </script>
+</body>
+</html>

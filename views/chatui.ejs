@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet"  href="./chatui.css" >
+    <script src="https://kit.fontawesome.com/832990d299.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+    <div class="main">
+        <div class="chats">
+            <div class="dp">
+            <img src="/uploadmulterdpfiles/<%=userdp.profiledp%>" height="120px" width="120px" id="profiledp">
+            </div>
+            <form action="/profile" method="post"  enctype="multipart/form-data">
+                <label for="inputdp">choosedp</label>
+                <input type="file" accept="image/jpg, image/jpeg,image/png" id="inputdp" name="profiledp">
+                <input type="submit" value="upload" id="upld">
+            </form>
+            <h2 style="color: rgb(7, 144, 235); display: flex; justify-content: center; align-items: center; position: relative;margin-top: 60px;"> Hello👋,Welcome <%=loginuser.username%>!</h2>
+</div>
+
+            
+        
+        <div class="child" id="parentmgs">
+            <div class="login">
+                <a href="/logout" style="text-decoration: none; color: black;">logout</a>
+           </div>
+    
+      
+    </div>
+
+   
+</div>
+  
+</body>
+</html>

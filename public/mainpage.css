@@ -1,0 +1,42 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+body
+{
+     background-image: url("https://media.istockphoto.com/id/843593806/photo/defocused-human-icons-on-black-background.webp?b=1&s=170667a&w=0&k=20&c=jC3xDEH1in0w4rz0XMFOnOPL66h3j8C5dduQWJnvuVs=");
+     background-repeat: no-repeat;
+     background-size: 100%;
+     overflow: hidden;
+}
+nav{
+    height: 50px;
+    width: 100%;
+}
+.login{
+    float: right;
+    height: 30px;
+    width: 90px;
+    border-radius: 40px;
+    background-color:rgb(121, 157, 228);
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+   clear: both;
+   float: left;
+}
+#lg{
+filter: drop-shadow(-10px -10px 15px  gold)
+
+
+}
+P{
+position: relative;
+margin-top:250px;
+left: 600px;
+color: rgb(2, 2, 44);
+
+font-size: 70px;
+}

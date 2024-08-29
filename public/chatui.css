@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+
+}
+
+.login{
+    float: right;
+    height: 30px;
+    width: 90px;
+    border-radius: 40px;
+    background-color:rgb(121, 157, 228);
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    height:100vh;
+    width: 1360px;
+    background-image: url("https://media.istockphoto.com/id/843593806/photo/defocused-human-icons-on-black-background.webp?b=1&s=170667a&w=0&k=20&c=jC3xDEH1in0w4rz0XMFOnOPL66h3j8C5dduQWJnvuVs=");
+     background-repeat:no-repeat;
+     background-size: 100%;
+     overflow: hidden;
+  }
+  .chats{
+    float: left;
+    clear: both;
+    height:100vh;
+    width: 500px;
+    background-color: rgb(12, 35, 70);
+
+  }
+  .dp{
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    position: relative;
+    margin-left: 190px;
+    background-color: rgb(223, 248, 248);
+  }
+  .child{
+    float: right;
+    height:90vh;
+    width: 860px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+}
+#profiledp{
+    border-radius:100%;
+}
+#inputdp{
+    display: none;
+}
+label{
+    display: block;
+    position: relative;
+    margin-left:-48px;
+    text-align: center;
+    font-weight: bolder;
+    height: 25px;
+    width: 90px;
+    border-radius:30px;
+    color: white;
+    background-color: #032ff5;
+}
+#upld{
+    display: block;
+    display: block;
+    position: relative;
+    margin-top: -25px;
+    margin-left:65px;
+    text-align: center;
+    font-weight: bolder;
+    height: 25px;
+    width: 90px;
+    border-radius:30px;
+    color: white;
+    background-color: #032ff5;
+}
+form{
+    position: relative;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+.inputuseremailid{
+    position: relative;
+    margin-top: 35px;
+    height:30px;
+    width: 500px;
+      
+}
+    
